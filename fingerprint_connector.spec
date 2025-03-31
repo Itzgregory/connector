@@ -2,11 +2,11 @@
 
 
 a = Analysis(
-    ['fingerprint_connector.py'],
+    ['src\\fingerprint_connector.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=[('dll/uareu4500.dll', '.')],
+    hiddenimports=['win32timezone'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
